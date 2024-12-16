@@ -8,9 +8,8 @@ copyright: Copyright &copy; 2023 leoalasiaga # 左下角的版权声明
 # [Navigtion]
 nav:
   - Home: index.md
-  - Java:
-      - java/index.md
-      - 设计模式: java/设计模式/index.md
+  - 框架:
+      - Spring.md
   - Dokcer:
       - docker/index.md
   #   - Installation: guide/installation.md
@@ -18,8 +17,6 @@ nav:
   #   - Configuration: guide/config.md
   - K8s:
       - k8s/index.md
-  - 教程:
-      - 教程/mkdocs.md
   - About: about.md
 
 #[UI]
@@ -72,7 +69,7 @@ theme:
   icon:
     repo: fontawesome/brands/github #右上角图标
 repo_name: leoalasiga.github.io # 右上角的名
-repo_url: https://github.com/leoalasiga/leoalasiga.github.io.git # 右上角点击跳转的链接
+repo_url: https://github.com/NaraSky/NaraSky.github.io.git # 右上角点击跳转的链接
 
 
 markdown_extensions:
