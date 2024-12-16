@@ -1,9 +1,9 @@
 #[Info]
-site_name: leoalasiaga Docs   #网站名字
-site_description: the notes record by leoalsiga
-site_author: leoalasiaga #作者名
-site_url: https://leoalasiga.github.io/  #网站地址
-copyright: Copyright &copy; 2023 leoalasiaga # 左下角的版权声明
+site_name: ZhiYu's Docs   #网站名字
+site_description: the notes record by ZhiYu  #网站描述
+site_author: ZhiYu #作者名
+site_url: https://NaraSky.github.io/  #网站地址
+copyright: Copyright &copy; 2024 NaraSky # 左下角的版权声明
 
 # [Navigtion]
 nav:
@@ -17,7 +17,6 @@ nav:
   #   - Configuration: guide/config.md
   - K8s:
       - k8s/index.md
-  - About: about.md
 
 #[UI]
 theme:
@@ -67,8 +66,8 @@ theme:
         name: Switch to light mode
 
   icon:
-    repo: fontawesome/brands/github #右上角图标
-repo_name: leoalasiga.github.io # 右上角的名
+    repo: NaraSky/brands/github #右上角图标
+repo_name: NaraSky.github.io # 右上角的名
 repo_url: https://github.com/NaraSky/NaraSky.github.io.git # 右上角点击跳转的链接
 
 
