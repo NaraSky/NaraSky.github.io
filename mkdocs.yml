@@ -14,6 +14,9 @@ nav:
       - docker/index.md
   - K8s:
       - k8s/index.md
+  - about:
+      - about/me.md
+
 
 #[UI]
 theme:
