@@ -12,9 +12,6 @@ nav:
       - Spring.md
   - Dokcer:
       - docker/index.md
-  #   - Installation: guide/installation.md
-  #   - Basics: guide/basics.md
-  #   - Configuration: guide/config.md
   - K8s:
       - k8s/index.md
 
@@ -66,7 +63,7 @@ theme:
         name: Switch to light mode
 
   icon:
-    repo: NaraSky/brands/github #右上角图标
+#    repo: NaraSky/brands/github #右上角图标
 repo_name: NaraSky.github.io # 右上角的名
 repo_url: https://github.com/NaraSky/NaraSky.github.io.git # 右上角点击跳转的链接
 
