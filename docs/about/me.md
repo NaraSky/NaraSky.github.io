@@ -9,7 +9,7 @@ status: new
 # Hi, there! I am 知雨
 
 <p style="text-align: center; margin: 0px;" markdown>
-  <img src="https://avatars.githubusercontent.com/u/188295088?v=4&size=64" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
+  <img src="https://s2.loli.net/2024/11/12/skvZLdl76xBab4C.png" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
   <!-- <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>知雨</strong></p> -->
 
 <br/>
