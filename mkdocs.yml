@@ -122,7 +122,7 @@ extra:
 plugins:
   - search #搜索配置
   # - statistics
-  - include_dir_to_nav:
+  - mkdocs-include_dir_to_nav:
       sort_file: true # 对文件进行排序
       sort_directory: true # 对目录进行排序
   - git-committers:
