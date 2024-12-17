@@ -1,18 +1,29 @@
 name: ci
+
 on:
   push:
     branches:
-      - main # 根据实际的分支情况设置
+      - master
+      - main
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      # Step 1: 检出代码
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Step 2: 设置 Python 环境
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
+
+      # Step 3: 缓存配置
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v3
         with:
@@ -20,5 +31,26 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+
+      # Step 4: 安装依赖
+      - run: pip install mkdocs-git-revision-date-localized-plugin
+      - run: pip install mkdocs-git-authors-plugin
+      - run: pip install mkdocs-git-committers-plugin-2
+      - run: pip install mkdocs-rss-plugin
+      - run: pip install jieba
+      - run: pip install mkdocs-statistics-plugin
+      - run: pip install mkdocs-include-dir-to-nav
+      - run: pip install mkdocs-markdownextradata-plugin
       - run: pip install mkdocs-material
+      - run: pip install --upgrade --force-reinstall mkdocs-material
+
+      # Step 5: 执行部署
       - run: mkdocs gh-deploy --force
+
+      # Step 6: 获取提交信息
+      - name: Get Commit Information
+        id: commit_info
+        run: |
+          echo "author=$(git log -1 --pretty=format:'%an')" >> $GITHUB_ENV
+          echo "message=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
+          echo "sha=$(git log -1 --pretty=format:'%H')" >> $GITHUB_ENV

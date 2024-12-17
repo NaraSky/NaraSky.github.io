@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef084dd-1e38-431e-b0c1-9ceec0753182" name="Changes" comment="更新mkdocs include_dir_to_nav配置">
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+    <list default="true" id="4ef084dd-1e38-431e-b0c1-9ceec0753182" name="Changes" comment="更新mkdocs导航配置文件">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,19 +71,6 @@
       <recent name="$PROJECT_DIR$/docs/框架" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="NaraSky.github.io" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="NaraSky.github.io" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -105,7 +92,8 @@
       <workItem from="1734358793057" duration="9000" />
       <workItem from="1734398743525" duration="68000" />
       <workItem from="1734399280090" duration="205000" />
-      <workItem from="1734402153016" duration="407000" />
+      <workItem from="1734402153016" duration="635000" />
+      <workItem from="1734402840021" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -187,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734402297205</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="更新mkdocs导航配置文件">
+      <option name="closed" value="true" />
+      <created>1734402773092</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734402773092</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +200,7 @@
     <MESSAGE value="更新文档配置及介绍内容" />
     <MESSAGE value="更新404页面及mkdocs配置" />
     <MESSAGE value="更新mkdocs include_dir_to_nav配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新mkdocs include_dir_to_nav配置" />
+    <MESSAGE value="更新mkdocs导航配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新mkdocs导航配置文件" />
   </component>
 </project>
