@@ -122,7 +122,7 @@ extra:
 plugins:
   - search #搜索配置
   # - statistics
-  - mkdocs-include_dir_to_nav:
+  - include_dir_to_nav:
       sort_file: true # 对文件进行排序
       sort_directory: true # 对目录进行排序
   - git-committers:
@@ -142,11 +142,7 @@ plugins:
       exclude:
         - index.md # 排除的文件列表
         - tag.md
-        - liuyanban.md
-        - blog/posts/update.md
-        - blog/posts/wkw.md
         - about/link.md
-        - websitebeauty/linktech.md
   - blog: #博客配置
       post_date_format: full #时间格式
       draft: true # 是否将帖子视为草稿
