@@ -8,8 +8,8 @@ theme:
   name: material
   custom_dir: docs/overrides #覆写路径
   font: #谷歌字体，自行搜索
-    text: Bitter  #文本字体
-    code: Roboto Mono  #代码字体
+    text: Bitter #文本字体
+    code: Roboto Mono #代码字体
   logo: https://s2.loli.net/2024/11/12/skvZLdl76xBab4C.png #左上角logo，可插入图片链接
 
   favicon: https://s2.loli.net/2024/11/12/skvZLdl76xBab4C.png # 网页icon
@@ -68,7 +68,6 @@ edit_uri: edit/main/docs # 编辑按钮跳转的链接
 repo_url: https://github.com/NaraSky/NaraSky.github.io # 右上角点击跳转的链接
 repo_name: Mkdocs-知雨 # 右上角的名字
 
-
 copyright: Copyright &copy; 2022~2024 苍镜月/All Rights Reserved. # 左下角的版权声明
 
 extra:
@@ -122,27 +121,26 @@ extra:
 
 plugins:
   - search #搜索配置
-  - statistics
+  # - statistics
   - include_dir_to_nav:
-      sort_file: true
-      sort_directory: true
+      sort_file: true # 对文件进行排序
+      sort_directory: true # 对目录进行排序
   - git-committers:
-      enabled: !ENV [CI, false]
-      repository: Pale-illusions/my-mkdocs
-      branch: main
+      enabled: !ENV [CI, false] # 是否启用，环境变量CI为true时启用
+      repository: NaraSky/NaraSky.github.io # 仓库地址
+      branch: main # 分支名称
       exclude:
-        - index.md
+        - index.md # 排除的文件列表
         - tag.md
-        - waline.md
         - blog/posts/update.md
         - blog/posts/wkw.md
         - about/link.md
   - git-revision-date-localized:
-      enabled: !ENV [CI, false]
-      type: iso_date
-      enable_creation_date: false
+      enabled: !ENV [CI, false] # 是否启用，环境变量CI为true时启用
+      type: iso_date # 日期格式
+      enable_creation_date: false # 是否启用创建日期
       exclude:
-        - index.md
+        - index.md # 排除的文件列表
         - tag.md
         - liuyanban.md
         - blog/posts/update.md
@@ -150,19 +148,19 @@ plugins:
         - about/link.md
         - websitebeauty/linktech.md
   - blog: #博客配置
-      post_date_format: full #时间
-      draft: true
+      post_date_format: full #时间格式
+      draft: true # 是否将帖子视为草稿
       draft_if_future_date: true #自动将具有未来日期的帖子标记为草稿
-      post_readtime: true
+      post_readtime: true # 是否显示阅读时间
       post_readtime_words_per_minute: 265 #计算帖子的阅读时间时读者每分钟预计阅读的字数
-      post_url_format: "{date}/{slug}"
-      # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      post_url_format: "{date}/{slug}" # 帖子URL格式
+      # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify # 类别URL格式化
       #   kwds:
-      #     case: lower
-      pagination_url_format: "page/{page}"
-      authors_file: "{blog}/.authors.yml" #作者信息
+      #     case: lower # 将类别名称转换为小写
+      pagination_url_format: "page/{page}" # 分页URL格式
+      authors_file: "{blog}/.authors.yml" #作者信息文件路径
   - tags:
-      tags_file: tag.md #分类标签
+      tags_file: tag.md #分类标签文件路径
 
 markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
   - abbr
@@ -188,6 +186,7 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
           class: mermaid
           format:
             !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+
   - pymdownx.arithmatex: # latex支持
       generic: true
   - toc:
@@ -209,7 +208,7 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
 
 extra_javascript:
   # - javascripts/extra.js #自定义javascript
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js # extra的cdn
   - javascripts/mathjax.js #Latex支持
   - javascripts/editable-code.js # 代码可执行
   - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
@@ -234,15 +233,12 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
 
-
-
   # [Navigtion]
 nav:
   - 主页: index.md
   - 标签: tag.md
   - Blogger:
       - index: Blog/index.md
-  - : Spring框架/backend
     # - Java:
     #   - Frequency-Control-Starter: blog/backend/Java/FrequencyControl.md
     # - Spring:
